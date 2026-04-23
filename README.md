@@ -19,17 +19,13 @@ Direct mitigation costs
 
 The model maximizes social net benefits under different policy designs.
 
-Key findings from the paper include:
-
-- Results-based subsidies generally yield higher net benefits and greater carbon sequestration
-- However, practice-based subsidies can outperform when MRV costs are sufficiently high (e.g., >3.5× those of practice-based schemes, depending on carbon price)
 
 # Model Description
 
 The implemented model is formulated as a nonlinear optimization problem and solved using GAMS (CONOPT4 solver)
 It includes:
-- A social planner problem (first-best, results-based subsidy)
-- A Stackelberg game framework for uniform practice-based subsidies
+- A social planner problem (first-best, results-based subsidy, also referred to as output subsidy)
+- A Stackelberg game framework for uniform practice-based subsidies, i.e. input subsidies
 
 The framework allows comparison of policy instruments under realistic institutional constraints.
 
@@ -38,12 +34,14 @@ The framework allows comparison of policy instruments under realistic institutio
 The model here is calibrated using data from Danish agriculture, including:
 - 75 representative farm types
 - Regional variation across Denmark
-- Three carbon sequestration measures:
-- Cover cropping
-- Reduced tillage
-- Conversion to grassland
+- Three carbon sequestration measures: Cover cropping, Reduced tillage and Conversion to grassland
 
 Carbon sequestration, costs, and constraints are parameterized using empirical literature and official statistics.
+
+Key findings from the paper include:
+
+- Results-based subsidies generally yield higher net benefits and greater carbon sequestration
+- However, practice-based subsidies can outperform when MRV costs are sufficiently high (e.g., >3.5× those of practice-based schemes, depending on carbon price)
 
 # Data Availability
 
